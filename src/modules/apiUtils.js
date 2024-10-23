@@ -10,6 +10,6 @@ export async function callWeatherAPI(location) {
     return data;
   } catch {
     console.log("Location error");
-    return {};
+    return "no result";
   }
 };

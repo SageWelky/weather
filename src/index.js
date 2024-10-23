@@ -6,8 +6,12 @@ async function getWeatherData() {
   let location = document.querySelector('.location-input').value;
   let data = await callWeatherAPI(location);
   //change to ouput information to display
-  console.log(data);
-  displayUpdate(data);
+
+  if(data !== "no result") {
+    displayUpdate(data);
+  } else {
+    alert("A Location Error Has Occurred.");
+  }
 }
 
 let searchButton = document.querySelector('.search-button');

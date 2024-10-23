@@ -1,3 +1,5 @@
+import getIcon from "./iconHelper";
+
 export function displayUpdate(data) {
 
   console.log(data.currentConditions);
@@ -5,7 +7,7 @@ export function displayUpdate(data) {
   console.log(data.currentConditions.conditions);
   document.querySelector('.weather-conditions').innerHTML = data.currentConditions.conditions;
   console.log(data.currentConditions.icon);
-  document.querySelector('.weather-icon').innerHTML = data.currentConditions.icon;
+  document.querySelector('.weather-icon').src = getIcon(data.currentConditions.icon);
   console.log(data.description);
   document.querySelector('.weather-description').innerHTML = data.description;
   console.log(data.currentConditions.temp);
