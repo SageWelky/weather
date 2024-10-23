@@ -14,6 +14,9 @@ async function getWeatherData() {
   }
 }
 
+let weatherDisplay = document.querySelector('.weather-display');
+weatherDisplay.style.visibility = "hidden";
+
 let searchButton = document.querySelector('.search-button');
 searchButton.addEventListener( 'click', getWeatherData );
 

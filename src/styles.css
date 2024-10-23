@@ -148,6 +148,7 @@ html, :root, body {
 
 .weather-label {
   font-family: PoppinsBold, 'Times New Roman', Times, serif;
+  color: hsl(70, 34%, 59%);
   font-size: 20px;
   font-weight: bold;
 }
