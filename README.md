@@ -1,4 +1,4 @@
-# Project: Todo App
+# Project: Weather App
 
 [Live Preview](https://sagewelky.github.io/weather/)
 
